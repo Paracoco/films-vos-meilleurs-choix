@@ -1,0 +1,10 @@
+@mixin btn {
+    border: none;
+    padding: 5px 0 5px 0;
+    
+}
+
+@mixin card {
+    padding: 5px;
+    margin: 5px;
+}
