@@ -8,11 +8,4 @@
     background-color: $primary;
 }
 
-.card {
-    @include cards.card;
-
-.card__btn {
-    @include cards.btn;
-    }
-}
 

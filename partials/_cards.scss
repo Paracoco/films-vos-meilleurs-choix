@@ -1,0 +1,15 @@
+@use 'partials/top-picks';
+@use 'partials/variables';
+
+@import 'partials/variables';
+
+card__btn {
+    border: 0;
+    padding: 5px 0 5px 0;
+    width: 100%;
+}
+
+card {
+    padding: 5px;
+    margin: 5px;
+}
