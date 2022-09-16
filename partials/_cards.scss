@@ -1,15 +1,15 @@
-@use 'partials/top-picks';
-@use 'partials/variables';
+@use "sass:color";
 
 @import 'partials/variables';
 
-card__btn {
+.card__btn {
     border: 0;
     padding: 5px 0 5px 0;
     width: 100%;
+    background-color: color.adjust($primary, $lightness: 15%)
 }
 
-card {
+.card {
     padding: 5px;
     margin: 5px;
 }
