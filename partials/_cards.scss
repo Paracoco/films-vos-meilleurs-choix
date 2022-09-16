@@ -1,15 +1,29 @@
 @use "sass:color";
+@use 'mixins/text';
+@import 'variables';
 
-@import 'partials/variables';
+@mixin small-cap {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
 
 .card__btn {
     border: 0;
     padding: 5px 0 5px 0;
     width: 100%;
-    background-color: color.adjust($primary, $lightness: 15%)
+    background: color.adjust($primary, $lightness: 15%);
+    color: color.complement($primary);
+    @include text.small-cap;
 }
 
 .card {
     padding: 5px;
-    margin: 5px;
+    margin: 5px;   
 }
+
+.card__btn:hover {
+    background: color.adjust($primary, $lightness: 25%);
+}
+
+
